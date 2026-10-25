@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/layout/ThemeProvider';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { AdBanner } from '@/components/ads/AdBanner';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -77,6 +78,7 @@ export default function RootLayout({
             <AdBanner format="sticky-anchor" />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
