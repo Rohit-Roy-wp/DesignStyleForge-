@@ -67,15 +67,18 @@ export default function HomePage() {
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           {/* Release Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-xs font-semibold text-cyan-400 shadow-lg shadow-cyan-500/10 mb-6 backdrop-blur-md">
-            <Sparkles className="h-3.5 w-3.5 text-cyan-400 animate-spin" />
-            <span>20+ Frontend Style Engines & Canvas Laboratories</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-            <span className="forge-text-muted">₹0 Server Cost</span>
+          <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 sm:px-4 py-1.5 text-[11px] sm:text-xs font-semibold text-cyan-400 shadow-lg shadow-cyan-500/10 mb-6 backdrop-blur-md">
+            <Sparkles className="h-3.5 w-3.5 text-cyan-400 animate-spin shrink-0" />
+            <span className="truncate">
+              <span className="hidden sm:inline">20+ Frontend Style Engines & Canvas Laboratories</span>
+              <span className="sm:hidden">20+ Style Engines & Labs</span>
+            </span>
+            <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse shrink-0"></span>
+            <span className="forge-text-muted shrink-0 text-[10px] sm:text-xs">₹0 Server Cost</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="mx-auto max-w-4xl text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
+          <h1 className="mx-auto max-w-4xl text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight break-words">
             Forge Extraordinary{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500">
               Frontend Aesthetics
@@ -83,7 +86,7 @@ export default function HomePage() {
             in Real-Time.
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg forge-text-muted leading-relaxed">
+          <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-sm sm:text-base md:text-lg forge-text-muted leading-relaxed px-2">
             Stop guessing CSS blur values and shadow coordinates. Design, preview, and generate production-grade code for <strong>Glassmorphism, Cyberpunk, Claymorphism, Aurora Gradients, Pixel Art, and 15+ more styles</strong> in seconds.
           </p>
 
@@ -91,22 +94,22 @@ export default function HomePage() {
           <HeroShowcase />
 
           {/* Quick Metrics Bar */}
-          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
-            <div className="rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-4 backdrop-blur shadow-sm">
-              <div className="text-2xl sm:text-3xl font-extrabold text-cyan-400">20+</div>
-              <div className="text-xs forge-text-muted mt-0.5 font-medium">Design Styles</div>
+          <div className="mx-auto mt-8 sm:mt-10 grid max-w-3xl grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-4">
+            <div className="rounded-xl sm:rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3 sm:p-4 backdrop-blur shadow-xs">
+              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-cyan-400">20+</div>
+              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">Design Styles</div>
             </div>
-            <div className="rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-4 backdrop-blur shadow-sm">
-              <div className="text-2xl sm:text-3xl font-extrabold text-emerald-400">₹0</div>
-              <div className="text-xs forge-text-muted mt-0.5 font-medium">Infra / Server Cost</div>
+            <div className="rounded-xl sm:rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3 sm:p-4 backdrop-blur shadow-xs">
+              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-emerald-400">₹0</div>
+              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">Infra / Server Cost</div>
             </div>
-            <div className="rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-4 backdrop-blur shadow-sm">
-              <div className="text-2xl sm:text-3xl font-extrabold text-indigo-400">100%</div>
-              <div className="text-xs forge-text-muted mt-0.5 font-medium">Client-Side SSG</div>
+            <div className="rounded-xl sm:rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-4 backdrop-blur shadow-xs">
+              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-indigo-400">100%</div>
+              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">Client-Side SSG</div>
             </div>
-            <div className="rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-4 backdrop-blur shadow-sm">
-              <div className="text-2xl sm:text-3xl font-extrabold text-pink-400">&lt; 1s</div>
-              <div className="text-xs forge-text-muted mt-0.5 font-medium">Instant Copy Code</div>
+            <div className="rounded-xl sm:rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3 sm:p-4 backdrop-blur shadow-xs">
+              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-pink-400">&lt; 1s</div>
+              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">Instant Copy Code</div>
             </div>
           </div>
         </div>
@@ -161,11 +164,11 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap gap-2 mb-8 border-b border-[var(--app-card-border)] pb-4">
+        {/* Category Tabs (smooth horizontal scroll on mobile) */}
+        <div className="flex items-center gap-2 mb-8 border-b border-[var(--app-card-border)] pb-4 overflow-x-auto no-scrollbar">
           <button
             onClick={() => setSelectedCategory('all')}
-            className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all cursor-pointer ${
+            className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3 sm:px-4 py-2 text-xs font-semibold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
               selectedCategory === 'all'
                 ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/25'
                 : 'border border-[var(--app-card-border)] bg-[var(--app-input-bg)] forge-text-muted hover:forge-text'
@@ -178,40 +181,40 @@ export default function HomePage() {
           <button
             id="css-generators"
             onClick={() => setSelectedCategory('css')}
-            className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all cursor-pointer ${
+            className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3 sm:px-4 py-2 text-xs font-semibold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
               selectedCategory === 'css'
                 ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/25'
                 : 'border border-[var(--app-card-border)] bg-[var(--app-input-bg)] forge-text-muted hover:forge-text'
             }`}
           >
             <Layers className="h-3.5 w-3.5 text-cyan-400" />
-            Module A: CSS Generators (5)
+            <span><span className="hidden sm:inline">Module A: </span>CSS Generators (5)</span>
           </button>
 
           <button
             id="canvas-images"
             onClick={() => setSelectedCategory('canvas')}
-            className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all cursor-pointer ${
+            className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3 sm:px-4 py-2 text-xs font-semibold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
               selectedCategory === 'canvas'
                 ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/25'
                 : 'border border-[var(--app-card-border)] bg-[var(--app-input-bg)] forge-text-muted hover:forge-text'
             }`}
           >
             <Palette className="h-3.5 w-3.5 text-amber-400" />
-            Module B: Canvas & Images (6)
+            <span><span className="hidden sm:inline">Module B: </span>Canvas & Images (6)</span>
           </button>
 
           <button
             id="typography-audio"
             onClick={() => setSelectedCategory('typography')}
-            className={`flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold transition-all cursor-pointer ${
+            className={`flex items-center gap-1.5 sm:gap-2 rounded-xl px-3 sm:px-4 py-2 text-xs font-semibold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
               selectedCategory === 'typography'
                 ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/25'
                 : 'border border-[var(--app-card-border)] bg-[var(--app-input-bg)] forge-text-muted hover:forge-text'
             }`}
           >
             <Compass className="h-3.5 w-3.5 text-purple-400" />
-            Module C: Typography & Audio (9)
+            <span><span className="hidden sm:inline">Module C: </span>Typography & Audio (9)</span>
           </button>
         </div>
 

@@ -28,25 +28,25 @@ export function Header() {
       <header className="sticky top-0 z-40 w-full border-b border-[var(--app-card-border)] bg-[var(--app-header-bg)] backdrop-blur-md transition-colors duration-300">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           {/* Logo & Brand */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-pink-500 text-white shadow-lg shadow-cyan-500/25 group-hover:scale-105 group-hover:rotate-3 transition-transform">
-              <Sparkles className="h-5 w-5" />
+          <Link href="/" className="flex items-center gap-2 group min-w-0 shrink">
+            <div className="flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-pink-500 text-white shadow-lg shadow-cyan-500/25 group-hover:scale-105 group-hover:rotate-3 transition-transform">
+              <Sparkles className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
-            <div>
-              <span className="text-lg font-black tracking-tight flex items-center gap-1 font-sans">
+            <div className="truncate">
+              <span className="text-base sm:text-lg font-black tracking-tight flex items-center gap-1 font-sans truncate">
                 <span className="forge-text">DesignStyle</span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500 font-extrabold">
                   Forge
                 </span>
               </span>
-              <span className="hidden sm:block text-[9px] font-mono forge-text-muted -mt-1 tracking-widest uppercase">
+              <span className="hidden sm:block text-[9px] font-mono forge-text-muted -mt-1 tracking-widest uppercase truncate">
                 20+ Aesthetic Code Engines
               </span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 text-sm font-medium">
+          {/* Desktop Navigation (visible on lg: 1024px+ to avoid tablet cramping) */}
+          <nav className="hidden lg:flex items-center gap-1 text-sm font-medium">
             <Link
               href="/"
               className={`px-3 py-1.5 rounded-lg transition-all ${
@@ -80,12 +80,13 @@ export function Header() {
             </Link>
           </nav>
 
-          {/* Right Actions: Search + Interactive Theme Toggle + Mobile Menu */}
-          <div className="flex items-center gap-2.5">
+          {/* Right Actions: Search + Interactive Theme Toggle + Mobile/Tablet Menu */}
+          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
             <button
               onClick={() => setSearchOpen(true)}
-              className="flex items-center gap-2 rounded-xl border border-[var(--app-card-border)] bg-[var(--app-input-bg)] px-3 py-1.5 text-xs forge-text-muted hover:border-cyan-500/50 hover:forge-text transition-all shadow-xs"
+              className="flex items-center justify-center gap-2 rounded-xl border border-[var(--app-card-border)] bg-[var(--app-input-bg)] h-8 w-8 sm:h-auto sm:w-auto px-0 sm:px-3 py-0 sm:py-1.5 text-xs forge-text-muted hover:border-cyan-500/50 hover:forge-text transition-all shadow-xs"
               title="Search tools"
+              aria-label="Search tools"
             >
               <Search className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">Search styles...</span>
@@ -97,7 +98,7 @@ export function Header() {
             {/* High-Visibility Animated Theme Switcher Button */}
             <button
               onClick={toggleTheme}
-              className="relative flex items-center gap-1.5 rounded-xl border border-[var(--app-card-border)] bg-[var(--app-input-bg)] px-2.5 py-1.5 text-xs font-semibold forge-text shadow-xs hover:border-cyan-500/50 active:scale-95 transition-all cursor-pointer"
+              className="relative flex items-center justify-center gap-1.5 rounded-xl border border-[var(--app-card-border)] bg-[var(--app-input-bg)] h-8 w-8 sm:h-auto sm:w-auto px-0 sm:px-2.5 py-0 sm:py-1.5 text-xs font-semibold forge-text shadow-xs hover:border-cyan-500/50 active:scale-95 transition-all cursor-pointer"
               title={`Switch to ${theme === 'dark' ? 'Light Mode' : 'Dark Mode'}`}
               aria-label="Toggle Theme Mode"
             >
@@ -113,20 +114,20 @@ export function Header() {
               </span>
             </button>
 
-            {/* Mobile menu trigger */}
+            {/* Mobile & Tablet menu trigger (visible on < 1024px) */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="flex md:hidden h-9 w-9 items-center justify-center rounded-xl border border-[var(--app-card-border)] bg-[var(--app-input-bg)] forge-text"
+              className="flex lg:hidden h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-xl border border-[var(--app-card-border)] bg-[var(--app-input-bg)] forge-text hover:border-cyan-500/50 transition-colors"
               aria-label="Open mobile menu"
             >
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {mobileMenuOpen ? <X className="h-4 w-4 sm:h-5 sm:w-5" /> : <Menu className="h-4 w-4 sm:h-5 sm:w-5" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile & Tablet Dropdown Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-[var(--app-card-border)] bg-[var(--app-bg)] px-4 py-4 space-y-2">
+          <div className="lg:hidden border-t border-[var(--app-card-border)] bg-[var(--app-header-bg)] px-4 py-4 space-y-2 backdrop-blur-xl">
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}

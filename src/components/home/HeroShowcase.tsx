@@ -15,20 +15,20 @@ export function HeroShowcase() {
       <div className="absolute -bottom-10 right-1/4 h-64 w-64 rounded-full bg-pink-500/20 blur-3xl -z-10 pointer-events-none animate-pulse-glow" />
 
       {/* Main Showcase Container */}
-      <div className="relative overflow-hidden rounded-3xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-4 sm:p-6 backdrop-blur-2xl shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3.5 sm:p-6 backdrop-blur-2xl shadow-2xl">
         {/* Top Specimen Tabs */}
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--app-card-border)] pb-4 mb-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 border-b border-[var(--app-card-border)] pb-3 sm:pb-4 mb-4 sm:mb-6">
           <div className="flex items-center gap-2">
-            <span className="flex h-2.5 w-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-            <span className="text-xs font-mono font-bold tracking-wider uppercase forge-text">
+            <span className="flex h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span className="text-[11px] sm:text-xs font-mono font-bold tracking-wider uppercase forge-text">
               Live Style Lab • Interactive Specimens
             </span>
           </div>
 
-          <div className="flex items-center rounded-xl bg-[var(--app-bg-secondary)] p-1 border border-[var(--app-card-border)] text-xs">
+          <div className="flex items-center rounded-xl bg-[var(--app-bg-secondary)] p-1 border border-[var(--app-card-border)] text-xs overflow-x-auto no-scrollbar max-w-full">
             <button
               onClick={() => setActiveTab('glass')}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-semibold transition-all ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'glass'
                   ? 'bg-cyan-500 text-white shadow-md'
                   : 'forge-text-muted hover:forge-text'
@@ -39,7 +39,7 @@ export function HeroShowcase() {
             </button>
             <button
               onClick={() => setActiveTab('cyber')}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-semibold transition-all ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'cyber'
                   ? 'bg-pink-600 text-white shadow-md'
                   : 'forge-text-muted hover:forge-text'
@@ -50,7 +50,7 @@ export function HeroShowcase() {
             </button>
             <button
               onClick={() => setActiveTab('clay')}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-semibold transition-all ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'clay'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'forge-text-muted hover:forge-text'
@@ -61,7 +61,7 @@ export function HeroShowcase() {
             </button>
             <button
               onClick={() => setActiveTab('aurora')}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-semibold transition-all ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'aurora'
                   ? 'bg-emerald-600 text-white shadow-md'
                   : 'forge-text-muted hover:forge-text'
@@ -165,6 +165,8 @@ export function HeroShowcase() {
                 onMouseDown={() => setIsClayPressed(true)}
                 onMouseUp={() => setIsClayPressed(false)}
                 onMouseLeave={() => setIsClayPressed(false)}
+                onTouchStart={() => setIsClayPressed(true)}
+                onTouchEnd={() => setIsClayPressed(false)}
                 style={{
                   backgroundColor: '#6366f1',
                   borderRadius: '32px',
@@ -173,9 +175,9 @@ export function HeroShowcase() {
                     : '0px 16px 32px rgba(0,0,0,0.35), inset -8px -8px 14px rgba(0,0,0,0.4), inset 8px 8px 14px rgba(255,255,255,0.45)',
                   transform: isClayPressed ? 'translateY(4px) scale(0.97)' : 'translateY(0) scale(1)',
                 }}
-                className="px-8 py-4 text-base font-extrabold text-white transition-all duration-150 cursor-pointer select-none flex items-center gap-2"
+                className="px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-extrabold text-white transition-all duration-150 cursor-pointer select-none flex items-center gap-2"
               >
-                <Box className="h-5 w-5" />
+                <Box className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span>Tactile Clay Cushion</span>
               </button>
 
