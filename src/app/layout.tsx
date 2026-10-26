@@ -67,7 +67,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} dark`} suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col forge-bg forge-text antialiased font-sans transition-colors duration-300">
+      <body className="min-h-screen flex flex-col forge-bg forge-text antialiased font-sans transition-colors duration-300" suppressHydrationWarning>
         <ThemeProvider>
           <Header />
           <div className="flex-1">{children}</div>
