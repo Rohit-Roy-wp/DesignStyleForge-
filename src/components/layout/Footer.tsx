@@ -27,7 +27,7 @@ export function Footer() {
             <div className="flex items-center gap-3 pt-2 text-xs forge-text-muted">
               <span className="flex items-center gap-1.5 text-emerald-400">
                 <ShieldCheck className="h-4 w-4" />
-                ₹0 Server Cost (Static Export)
+                100% Free & Open
               </span>
               <span>•</span>
               <span className="flex items-center gap-1">

@@ -70,7 +70,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col forge-bg forge-text antialiased font-sans transition-colors duration-300">
         <ThemeProvider>
           <Header />
-          <div className="flex-1 pb-16 md:pb-0">{children}</div>
+          <div className="flex-1">{children}</div>
           <Footer />
 
           {/* Sticky Anchor Ad on Mobile Screens */}

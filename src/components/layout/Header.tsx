@@ -140,21 +140,21 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="block rounded-lg px-3 py-2 text-sm font-medium forge-text hover:bg-[var(--app-bg-secondary)]"
             >
-              Module A: CSS Generators
+              CSS & UI Generators
             </Link>
             <Link
               href="/#canvas-images"
               onClick={() => setMobileMenuOpen(false)}
               className="block rounded-lg px-3 py-2 text-sm font-medium forge-text hover:bg-[var(--app-bg-secondary)]"
             >
-              Module B: Canvas & Image Processing
+              Canvas & Image Studios
             </Link>
             <Link
               href="/#typography-audio"
               onClick={() => setMobileMenuOpen(false)}
               className="block rounded-lg px-3 py-2 text-sm font-medium forge-text hover:bg-[var(--app-bg-secondary)]"
             >
-              Module C: Typography & Layout
+              Typography & Audio Labs
             </Link>
           </div>
         )}

@@ -74,7 +74,7 @@ export default function HomePage() {
               <span className="sm:hidden">20+ Style Engines & Labs</span>
             </span>
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse shrink-0"></span>
-            <span className="forge-text-muted shrink-0 text-[10px] sm:text-xs">₹0 Server Cost</span>
+            <span className="forge-text-muted shrink-0 text-[10px] sm:text-xs">No Sign-Up Needed</span>
           </div>
 
           {/* Main Headline */}
@@ -100,12 +100,12 @@ export default function HomePage() {
               <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">Design Styles</div>
             </div>
             <div className="rounded-xl sm:rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3 sm:p-4 backdrop-blur shadow-xs">
-              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-emerald-400">₹0</div>
-              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">Infra / Server Cost</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-emerald-400">100% Free</div>
+              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">No Account or Paywall</div>
             </div>
             <div className="rounded-xl sm:rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-4 backdrop-blur shadow-xs">
-              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-indigo-400">100%</div>
-              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">Client-Side SSG</div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-indigo-400">Private</div>
+              <div className="text-[11px] sm:text-xs forge-text-muted mt-0.5 font-medium">100% In-Browser</div>
             </div>
             <div className="rounded-xl sm:rounded-2xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3 sm:p-4 backdrop-blur shadow-xs">
               <div className="text-xl sm:text-2xl md:text-3xl font-extrabold text-pink-400">&lt; 1s</div>
@@ -188,7 +188,7 @@ export default function HomePage() {
             }`}
           >
             <Layers className="h-3.5 w-3.5 text-cyan-400" />
-            <span><span className="hidden sm:inline">Module A: </span>CSS Generators (5)</span>
+            <span>CSS Generators (5)</span>
           </button>
 
           <button
@@ -201,7 +201,7 @@ export default function HomePage() {
             }`}
           >
             <Palette className="h-3.5 w-3.5 text-amber-400" />
-            <span><span className="hidden sm:inline">Module B: </span>Canvas & Images (6)</span>
+            <span>Canvas & Images (6)</span>
           </button>
 
           <button
@@ -214,7 +214,7 @@ export default function HomePage() {
             }`}
           >
             <Compass className="h-3.5 w-3.5 text-purple-400" />
-            <span><span className="hidden sm:inline">Module C: </span>Typography & Audio (9)</span>
+            <span>Typography & Audio (9)</span>
           </button>
         </div>
 
