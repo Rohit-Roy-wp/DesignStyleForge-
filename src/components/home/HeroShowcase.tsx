@@ -2,35 +2,31 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Sparkles, ArrowRight, Zap, Layers, Box, Flame } from 'lucide-react';
+import { ArrowRight, Zap, Layers, Box, Compass } from 'lucide-react';
 
 export function HeroShowcase() {
   const [activeTab, setActiveTab] = useState<'glass' | 'cyber' | 'clay' | 'aurora'>('glass');
   const [isClayPressed, setIsClayPressed] = useState<boolean>(false);
 
   return (
-    <div className="relative mx-auto max-w-4xl mt-12 mb-6">
-      {/* Decorative ambient glowing orbs behind the showcase */}
-      <div className="absolute -top-10 left-1/4 h-64 w-64 rounded-full bg-cyan-500/20 blur-3xl -z-10 pointer-events-none animate-pulse-glow" />
-      <div className="absolute -bottom-10 right-1/4 h-64 w-64 rounded-full bg-pink-500/20 blur-3xl -z-10 pointer-events-none animate-pulse-glow" />
-
+    <div className="relative mx-auto w-full">
       {/* Main Showcase Container */}
-      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3.5 sm:p-6 backdrop-blur-2xl shadow-2xl">
+      <div className="relative overflow-hidden rounded-xl border border-[var(--app-card-border)] bg-[var(--app-card)] p-3.5 sm:p-5 shadow-xs">
         {/* Top Specimen Tabs */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 border-b border-[var(--app-card-border)] pb-3 sm:pb-4 mb-4 sm:mb-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 border-b border-[var(--app-card-border)] pb-3 sm:pb-3.5 mb-4 sm:mb-5">
           <div className="flex items-center gap-2">
-            <span className="flex h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span className="flex h-2 w-2 rounded-full bg-cyan-400"></span>
             <span className="text-[11px] sm:text-xs font-mono font-bold tracking-wider uppercase forge-text">
-              Live Style Lab • Interactive Specimens
+              Live Specimen Sandbox
             </span>
           </div>
 
-          <div className="flex items-center rounded-xl bg-[var(--app-bg-secondary)] p-1 border border-[var(--app-card-border)] text-xs overflow-x-auto no-scrollbar max-w-full">
+          <div className="flex items-center rounded-lg bg-[var(--app-bg-secondary)] p-1 border border-[var(--app-card-border)] text-xs overflow-x-auto no-scrollbar max-w-full">
             <button
               onClick={() => setActiveTab('glass')}
-              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-md px-2.5 sm:px-3 py-1 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === 'glass'
-                  ? 'bg-cyan-500 text-white shadow-md'
+                  ? 'bg-slate-800 text-cyan-400 border border-slate-700'
                   : 'forge-text-muted hover:forge-text'
               }`}
             >
@@ -39,9 +35,9 @@ export function HeroShowcase() {
             </button>
             <button
               onClick={() => setActiveTab('cyber')}
-              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-md px-2.5 sm:px-3 py-1 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === 'cyber'
-                  ? 'bg-pink-600 text-white shadow-md'
+                  ? 'bg-slate-800 text-pink-400 border border-slate-700'
                   : 'forge-text-muted hover:forge-text'
               }`}
             >
@@ -50,9 +46,9 @@ export function HeroShowcase() {
             </button>
             <button
               onClick={() => setActiveTab('clay')}
-              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-md px-2.5 sm:px-3 py-1 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === 'clay'
-                  ? 'bg-indigo-600 text-white shadow-md'
+                  ? 'bg-slate-800 text-indigo-400 border border-slate-700'
                   : 'forge-text-muted hover:forge-text'
               }`}
             >
@@ -61,13 +57,13 @@ export function HeroShowcase() {
             </button>
             <button
               onClick={() => setActiveTab('aurora')}
-              className={`flex items-center gap-1 sm:gap-1.5 rounded-lg px-2.5 sm:px-3 py-1.5 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-1.5 rounded-md px-2.5 sm:px-3 py-1 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === 'aurora'
-                  ? 'bg-emerald-600 text-white shadow-md'
+                  ? 'bg-slate-800 text-emerald-400 border border-slate-700'
                   : 'forge-text-muted hover:forge-text'
               }`}
             >
-              <Sparkles className="h-3.5 w-3.5" />
+              <Compass className="h-3.5 w-3.5" />
               Aurora
             </button>
           </div>
@@ -77,40 +73,50 @@ export function HeroShowcase() {
         <div className="relative min-h-[260px] sm:min-h-[290px] rounded-2xl overflow-hidden flex items-center justify-center p-6 border border-[var(--app-card-border)]">
           {/* TAB 1: GLASSMORPHISM */}
           {activeTab === 'glass' && (
-            <div className="relative w-full h-full flex items-center justify-center py-6">
-              {/* Dynamic glowing geometric spheres that bleed through the glass */}
-              <div className="absolute -top-4 left-1/3 h-32 w-32 rounded-full bg-gradient-to-tr from-pink-500 to-purple-600 blur-sm animate-float" />
-              <div className="absolute -bottom-4 right-1/3 h-36 w-36 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-600 blur-sm animate-float-delayed" />
+            <div className="relative w-full h-full min-h-[240px] flex items-center justify-center p-4 overflow-hidden rounded-xl bg-slate-950">
+              {/* High-contrast colorful geometric shapes behind the glass to make blur obvious */}
+              <div className="absolute top-4 left-6 h-24 w-24 rounded-full bg-cyan-500/80 blur-xs" />
+              <div className="absolute bottom-4 right-8 h-28 w-28 rounded-full bg-pink-500/80 blur-xs" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-20 w-44 rounded-lg bg-amber-400/80 -rotate-12 blur-xs" />
+
+              {/* Grid lines behind glass */}
+              <div
+                className="absolute inset-0 opacity-15 pointer-events-none"
+                style={{
+                  backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
+                  backgroundSize: '20px 20px',
+                }}
+              />
 
               {/* The Live Glass Specimen */}
               <div
                 style={{
-                  background: 'rgba(255, 255, 255, 0.14)',
-                  backdropFilter: 'blur(20px)',
-                  WebkitBackdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255, 255, 255, 0.28)',
-                  boxShadow: '0 16px 40px 0 rgba(0, 0, 0, 0.35)',
-                  backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.22) 0%, transparent 100%)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.12)',
+                  backdropFilter: 'blur(16px)',
+                  WebkitBackdropFilter: 'blur(16px)',
+                  border: '1px solid rgba(255, 255, 255, 0.25)',
+                  boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+                  backgroundImage: 'linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%)',
                 }}
-                className="relative z-10 w-full max-w-sm rounded-2xl p-6 text-white transition-all hover:scale-102 duration-300"
+                className="relative z-10 w-full max-w-sm rounded-xl p-5 text-white"
               >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="flex h-3 w-3 rounded-full bg-cyan-400 shadow-md shadow-cyan-400/80"></span>
-                  <span className="text-[10px] font-mono tracking-widest uppercase opacity-80">
-                    Fluent Glass Acrylic
+                <div className="flex items-center justify-between mb-2.5">
+                  <span className="flex h-2.5 w-2.5 rounded-full bg-cyan-400 shadow-sm shadow-cyan-400"></span>
+                  <span className="text-[10px] font-mono tracking-wider uppercase text-white/75 font-semibold">
+                    CSS Backdrop Filter
                   </span>
                 </div>
-                <h4 className="text-xl font-bold tracking-tight">Frosted Glass Prism</h4>
-                <p className="mt-1 text-xs opacity-90 leading-relaxed">
-                  Backdrop filter blur with optical reflection and specular edge highlights.
+                <h4 className="text-lg font-bold tracking-tight text-white">Frosted Glass Specimen</h4>
+                <p className="mt-1 text-xs text-white/80 leading-relaxed">
+                  Real-time optical refraction blur over contrasting substrate elements.
                 </p>
                 <div className="mt-4 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
-                  <span className="font-mono text-[10px] opacity-75">backdrop-filter: blur(20px)</span>
+                  <span className="font-mono text-[10px] text-cyan-300 font-semibold">backdrop-filter: blur(16px)</span>
                   <Link
                     href="/tools/glassmorphism/"
-                    className="flex items-center gap-1 font-semibold text-cyan-300 hover:text-white"
+                    className="font-semibold text-white hover:text-cyan-300 transition-colors"
                   >
-                    Open Builder →
+                    Open Studio →
                   </Link>
                 </div>
               </div>
@@ -155,7 +161,7 @@ export function HeroShowcase() {
 
           {/* TAB 3: 3D CLAYMORPHISM */}
           {activeTab === 'clay' && (
-            <div className="relative w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-br from-indigo-950/40 via-purple-950/20 to-slate-950/40 rounded-xl">
+            <div className="relative w-full h-full flex flex-col items-center justify-center p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
               <p className="text-xs forge-text-muted mb-4 font-mono">
                 Click or press to test tactile 3D rubber cushion physics:
               </p>

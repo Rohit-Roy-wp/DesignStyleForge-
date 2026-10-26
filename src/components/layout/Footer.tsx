@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Sparkles, ShieldCheck, Heart, Terminal } from 'lucide-react';
+import { ShieldCheck, Heart, Terminal } from 'lucide-react';
 import { TOOLS_DATA } from '@/data/toolsData';
 
 export function Footer() {
@@ -9,15 +9,15 @@ export function Footer() {
 
   return (
     <footer className="border-t border-[var(--app-card-border)] bg-[var(--app-bg-secondary)] forge-text-muted transition-colors duration-300">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-[var(--app-card-border)]">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 text-white shadow-md">
-                <Sparkles className="h-4 w-4" />
+              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-slate-900 border border-slate-700/80 text-cyan-400 shadow-sm">
+                <span className="font-mono text-xs font-black tracking-tighter">UX/</span>
               </div>
-              <span className="text-xl font-black tracking-tight forge-text">
+              <span className="text-xl font-bold tracking-tight forge-text">
                 UX<span className="text-cyan-400">Forge</span>
               </span>
             </Link>

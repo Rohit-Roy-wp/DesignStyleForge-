@@ -111,7 +111,7 @@ export default function FuturisticHudPage() {
     {
       question: 'How does the Web Audio synthesizer work without external MP3 files?',
       answer:
-        'DesignStyleForge uses the browser-native Web Audio API to procedurally generate a high-frequency sine wave oscillator directly in hardware, resulting in zero network downloads.',
+        'UXForge uses the browser-native Web Audio API to procedurally generate a high-frequency sine wave oscillator directly in hardware, resulting in zero network downloads.',
     },
     {
       question: 'Can I customize the HUD color to amber or crimson?',

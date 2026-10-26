@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Sparkles, Sun, Moon, Menu, X, Compass, Layers, Palette, Search } from 'lucide-react';
+import { Wrench, Sun, Moon, Menu, X, Compass, Layers, Palette, Search } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
 import { TOOLS_DATA } from '@/data/toolsData';
 
@@ -26,21 +26,21 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-40 w-full border-b border-[var(--app-card-border)] bg-[var(--app-header-bg)] backdrop-blur-md transition-colors duration-300">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-4 py-2.5 sm:px-6 lg:px-8">
           {/* Logo & Brand */}
-          <Link href="/" className="flex items-center gap-2 group min-w-0 shrink">
-            <div className="flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-pink-500 text-white shadow-lg shadow-cyan-500/25 group-hover:scale-105 group-hover:rotate-3 transition-transform">
-              <Sparkles className="h-4 w-4 sm:h-5 sm:w-5" />
+          <Link href="/" className="flex items-center gap-2.5 group min-w-0 shrink">
+            <div className="flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-xl bg-slate-900 border border-slate-700/80 text-cyan-400 shadow-sm transition-colors group-hover:border-cyan-500/60">
+              <span className="font-mono text-sm font-black tracking-tighter">UX/</span>
             </div>
             <div className="truncate">
-              <span className="text-lg sm:text-xl font-black tracking-tight flex items-center gap-0.5 font-sans truncate">
+              <span className="text-lg sm:text-xl font-bold tracking-tight flex items-center gap-0.5 font-sans truncate">
                 <span className="forge-text">UX</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500 font-extrabold">
+                <span className="text-cyan-400 font-extrabold">
                   Forge
                 </span>
               </span>
-              <span className="hidden sm:block text-[9px] font-mono forge-text-muted -mt-1 tracking-widest uppercase truncate">
-                20+ Aesthetic Code Engines
+              <span className="hidden sm:block text-[9px] font-mono forge-text-muted -mt-0.5 tracking-wider uppercase truncate">
+                Frontend Style Engines
               </span>
             </div>
           </Link>

@@ -175,7 +175,7 @@ export default function PopArtPage() {
       content: (
         <>
           <p>
-            To generate authentic digital halftone comic plates without slow server processing, DesignStyleForge uses native HTML5 Canvas <code className="text-cyan-400">getImageData()</code> array buffers:
+            To generate authentic digital halftone comic plates without slow server processing, UXForge uses native HTML5 Canvas <code className="text-cyan-400">getImageData()</code> array buffers:
           </p>
           <ul className="list-disc pl-5 space-y-1">
             <li><strong>Luma Calculation:</strong> The algorithm reads RGBA bytes and calculates luminance using the standard ITU-R BT.601 formula: <code className="text-cyan-400">Y = 0.299R + 0.587G + 0.114B</code>.</li>

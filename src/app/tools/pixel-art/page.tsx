@@ -118,7 +118,7 @@ export default function PixelArtPage() {
     {
       question: 'Will exported pixel art appear blurry when shared on social media?',
       answer:
-        'No! DesignStyleForge automatically upscales your pixel canvas by 24x using nearest-neighbor interpolation upon export, guaranteeing razor-sharp clarity on Twitter, Discord, and Retina screens.',
+        'No! UXForge automatically upscales your pixel canvas by 24x using nearest-neighbor interpolation upon export, guaranteeing razor-sharp clarity on Twitter, Discord, and Retina screens.',
     },
     {
       question: 'Can I import this pixel art into game engines like Unity or Godot?',

@@ -46,7 +46,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-lg font-bold text-white mb-2">3. Disclaimer of Warranty</h2>
             <p>
-              The materials and utilities on DesignStyleForge are provided on an &apos;as is&apos; basis. While we strive for cross-browser parity, DesignStyleForge makes no warranties, expressed or implied, regarding browser rendering discrepancies on deprecated or non-standard user agents.
+              The materials and utilities on UXForge are provided on an &apos;as is&apos; basis. While we strive for cross-browser parity, UXForge makes no warranties, expressed or implied, regarding browser rendering discrepancies on deprecated or non-standard user agents.
             </p>
           </section>
         </div>

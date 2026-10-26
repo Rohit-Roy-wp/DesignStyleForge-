@@ -186,7 +186,7 @@ export default function RetroCrtPage() {
     {
       question: 'Is my uploaded image uploaded to a server?',
       answer:
-        'No. DesignStyleForge operates with ₹0 server infrastructure. All canvas operations execute locally inside your web browser thread; your images never leave your computer.',
+        'No. UXForge operates with zero server infrastructure. All canvas operations execute locally inside your web browser thread; your images never leave your computer.',
     },
   ];
 

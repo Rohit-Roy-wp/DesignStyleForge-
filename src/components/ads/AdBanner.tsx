@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { Sparkles, Terminal } from 'lucide-react';
+import { Terminal } from 'lucide-react';
 
 interface AdBannerProps {
   format: 'leaderboard' | 'in-feed' | 'sidebar' | 'sticky-anchor';
@@ -63,7 +63,7 @@ export function AdBanner({ format, className = '', slotId }: AdBannerProps) {
         <div className="flex h-full w-full items-center justify-between flex-wrap gap-3 px-4 sm:px-6 py-3.5 text-xs text-left">
           <div className="flex items-center gap-3">
             <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 shrink-0">
-              <Sparkles className="h-4 w-4" />
+              <Terminal className="h-4 w-4" />
             </div>
             <div>
               <p className="font-semibold forge-text text-xs sm:text-sm flex items-center gap-1.5 flex-wrap">

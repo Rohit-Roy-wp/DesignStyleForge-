@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ChevronRight, Sparkles, ArrowLeft } from 'lucide-react';
+import { ChevronRight, Wrench, ArrowLeft } from 'lucide-react';
 import { AdBanner } from '@/components/ads/AdBanner';
 import { SeoArticle, SeoArticleSection } from '@/components/common/SeoArticle';
 import { FaqAccordion, FaqItem } from '@/components/common/FaqAccordion';
@@ -43,7 +43,7 @@ export function ToolLayout({
       />
 
       {/* Main Container */}
-      <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="mb-4 flex items-center gap-1.5 text-xs forge-text-muted">
           <Link href="/" className="flex items-center gap-1 hover:text-cyan-400 transition-colors">
@@ -65,16 +65,16 @@ export function ToolLayout({
         <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[var(--app-card-border)] pb-6">
           <div>
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <span className="inline-flex items-center gap-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 px-2.5 py-0.5 text-xs font-semibold text-cyan-400">
-                <Sparkles className="h-3 w-3" />
+              <span className="inline-flex items-center gap-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 px-2.5 py-0.5 text-xs font-semibold text-cyan-400">
+                <Wrench className="h-3 w-3" />
                 {tool.categoryShort}
               </span>
               {tool.badge && (
-                <span className="rounded-full bg-amber-500/10 border border-amber-500/30 px-2.5 py-0.5 text-xs font-medium text-amber-400">
+                <span className="rounded-md bg-amber-500/10 border border-amber-500/30 px-2.5 py-0.5 text-xs font-medium text-amber-400">
                   {tool.badge}
                 </span>
               )}
-              <span className="rounded-full border border-[var(--app-card-border)] bg-[var(--app-tag-bg)] px-2.5 py-0.5 text-xs forge-text-muted">
+              <span className="rounded-md border border-[var(--app-card-border)] bg-[var(--app-tag-bg)] px-2.5 py-0.5 text-xs forge-text-muted">
                 100% Client-Side
               </span>
             </div>
@@ -91,9 +91,9 @@ export function ToolLayout({
             {tool.features.map((feat, idx) => (
               <span
                 key={idx}
-                className="rounded-lg border border-[var(--app-card-border)] bg-[var(--app-input-bg)] px-2.5 py-1 text-xs forge-text-muted"
+                className="rounded-md border border-[var(--app-card-border)] bg-[var(--app-input-bg)] px-2.5 py-1 text-xs forge-text-muted font-mono"
               >
-                ✓ {feat}
+                {feat}
               </span>
             ))}
           </div>

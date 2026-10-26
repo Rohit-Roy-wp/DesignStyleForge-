@@ -1,33 +1,33 @@
 @import "tailwindcss";
 
 :root, html.dark {
-  --app-bg: #07080d;
-  --app-bg-secondary: #0d1017;
+  --app-bg: #090a0f;
+  --app-bg-secondary: #0f121a;
   --app-text: #f1f5f9;
   --app-text-muted: #94a3b8;
-  --app-card: rgba(14, 18, 28, 0.72);
+  --app-card: rgba(15, 19, 28, 0.85);
   --app-card-border: rgba(255, 255, 255, 0.08);
   --app-card-hover-border: rgba(6, 182, 212, 0.5);
-  --app-card-hover-shadow: rgba(6, 182, 212, 0.15);
-  --app-header-bg: rgba(7, 8, 13, 0.8);
-  --app-input-bg: #0d1017;
-  --app-tag-bg: rgba(255, 255, 255, 0.05);
-  --app-tag-border: rgba(255, 255, 255, 0.1);
+  --app-card-hover-shadow: rgba(0, 0, 0, 0.4);
+  --app-header-bg: rgba(9, 10, 15, 0.85);
+  --app-input-bg: #0f121a;
+  --app-tag-bg: rgba(255, 255, 255, 0.04);
+  --app-tag-border: rgba(255, 255, 255, 0.08);
 }
 
 html.light {
   --app-bg: #f8fafc;
-  --app-bg-secondary: #edf2f7;
+  --app-bg-secondary: #f1f5f9;
   --app-text: #0f172a;
   --app-text-muted: #64748b;
-  --app-card: rgba(255, 255, 255, 0.92);
-  --app-card-border: rgba(0, 0, 0, 0.08);
-  --app-card-hover-border: rgba(14, 165, 233, 0.6);
-  --app-card-hover-shadow: rgba(14, 165, 233, 0.12);
-  --app-header-bg: rgba(255, 255, 255, 0.85);
-  --app-input-bg: #ffffff;
-  --app-tag-bg: rgba(0, 0, 0, 0.04);
-  --app-tag-border: rgba(0, 0, 0, 0.08);
+  --app-card: #ffffff;
+  --app-card-border: #e2e8f0;
+  --app-card-hover-border: #cbd5e1;
+  --app-card-hover-shadow: rgba(0, 0, 0, 0.05);
+  --app-header-bg: rgba(248, 250, 252, 0.85);
+  --app-input-bg: #f8fafc;
+  --app-tag-bg: #f1f5f9;
+  --app-tag-border: #e2e8f0;
 }
 
 body {
@@ -59,15 +59,12 @@ body {
   background: var(--app-card);
   border: 1px solid var(--app-card-border);
   color: var(--app-text);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .forge-card:hover {
   border-color: var(--app-card-hover-border);
-  box-shadow: 0 12px 36px var(--app-card-hover-shadow);
-  transform: translateY(-3px);
+  box-shadow: 0 4px 16px var(--app-card-hover-shadow);
 }
 
 .forge-input {

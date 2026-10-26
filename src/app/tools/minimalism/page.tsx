@@ -157,7 +157,7 @@ export default function MinimalismPage() {
         )
         .join('\n      ')}
     </div>
-    <div class="footer">Created with DesignStyleForge</div>
+    <div class="footer">Created with UXForge</div>
   </div>
 </body>
 </html>`;

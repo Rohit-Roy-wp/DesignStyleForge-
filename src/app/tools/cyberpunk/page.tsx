@@ -137,7 +137,7 @@ export default function CyberpunkPage() {
     {
       question: 'How do I add a scanline overlay behind the glitch text?',
       answer:
-        'You can add a repeating-linear-gradient background overlay on a parent container with pointer-events: none. DesignStyleForge automatically includes the .scanlines utility class for instant CRT monitor lines.',
+        'You can add a repeating-linear-gradient background overlay on a parent container with pointer-events: none. UXForge automatically includes the .scanlines utility class for instant CRT monitor lines.',
     },
     {
       question: 'Can I change the font to a custom Cyberpunk font?',

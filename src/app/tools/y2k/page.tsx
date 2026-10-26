@@ -102,7 +102,7 @@ export default function Y2kWinampPage() {
     {
       question: 'Can I upload and play my own MP3 songs?',
       answer:
-        'Yes! DesignStyleForge includes a local audio upload input that routes playback directly through the browser Web Audio pipeline without uploading your files anywhere.',
+        'Yes! UXForge includes a local audio upload input that routes playback directly through the browser Web Audio pipeline without uploading your files anywhere.',
     },
     {
       question: 'Is Winamp skin styling possible in pure CSS?',
