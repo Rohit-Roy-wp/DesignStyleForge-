@@ -5,7 +5,7 @@ import { ArrowLeft, Sparkles, Zap, ShieldCheck, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'About DesignStyleForge — the ultimate frontend utility platform.',
+  description: 'About UXForge — the ultimate frontend utility platform.',
 };
 
 export default function AboutPage() {
@@ -22,12 +22,12 @@ export default function AboutPage() {
           <span>Our Mission</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-6">
-          About DesignStyleForge
+          About UXForge
         </h1>
 
         <div className="space-y-6 text-sm leading-relaxed">
           <p className="text-base text-neutral-200">
-            <strong>DesignStyleForge</strong> was built with a single audacious mission: to provide web developers, UI/UX engineers, and digital creators with instantaneous access to 20+ specialized design style generators with <strong>zero server lag</strong>, <strong>zero paywalls</strong>, and <strong>zero data tracking</strong>.
+            <strong>UXForge</strong> was built with a single audacious mission: to provide web developers, UI/UX engineers, and digital creators with instantaneous access to 20+ specialized design style generators with <strong>zero server lag</strong>, <strong>zero paywalls</strong>, and <strong>zero data tracking</strong>.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 my-8">
@@ -55,7 +55,7 @@ export default function AboutPage() {
           </div>
 
           <p>
-            Whether you are fine-tuning a frosted glass navbar for a Next.js dashboard, designing a retro 8-bit game sprite, or previewing calligraphy scripts, DesignStyleForge saves hours of trial and error by producing production-ready code in 1-click.
+            Whether you are fine-tuning a frosted glass navbar for a Next.js dashboard, designing a retro 8-bit game sprite, or previewing calligraphy scripts, UXForge saves hours of trial and error by producing production-ready code in 1-click.
           </p>
         </div>
       </div>

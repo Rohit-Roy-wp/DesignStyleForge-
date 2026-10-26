@@ -5,7 +5,7 @@ import { ArrowLeft, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms and Conditions for using DesignStyleForge web utility platform.',
+  description: 'Terms and Conditions for using UXForge web utility platform.',
 };
 
 export default function TermsPage() {
@@ -32,14 +32,14 @@ export default function TermsPage() {
           <section>
             <h2 className="text-lg font-bold text-white mb-2">1. Acceptance of Terms</h2>
             <p>
-              By accessing and using <strong>DesignStyleForge</strong>, you accept and agree to be bound by the terms and provision of this agreement. Our tools are provided completely free of charge under a royalty-free license for personal and commercial front-end development projects.
+              By accessing and using <strong>UXForge</strong>, you accept and agree to be bound by the terms and provision of this agreement. Our tools are provided completely free of charge under a royalty-free license for personal and commercial front-end development projects.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-bold text-white mb-2">2. Generated Code License (Commercial Use Allowed)</h2>
             <p>
-              All CSS, HTML snippets, SVG paths, and canvas images generated through DesignStyleForge belong to you. You are 100% free to use them in commercial websites, client client applications, open-source repositories, and digital artwork with no attribution required.
+              All CSS, HTML snippets, SVG paths, and canvas images generated through UXForge belong to you. You are 100% free to use them in commercial websites, client applications, open-source repositories, and digital artwork with no attribution required.
             </p>
           </section>
 

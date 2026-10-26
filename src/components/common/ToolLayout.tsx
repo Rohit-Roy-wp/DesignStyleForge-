@@ -38,7 +38,7 @@ export function ToolLayout({
         toolName={tool.name}
         description={tool.description}
         category={tool.category}
-        url={`https://designstyleforge.com${tool.route}`}
+        url={`https://uxforge.vercel.app${tool.route}`}
         faqs={faqs}
       />
 

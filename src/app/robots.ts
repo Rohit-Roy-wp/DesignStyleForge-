@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://designstyleforge.com/sitemap.xml',
+    sitemap: 'https://uxforge.vercel.app/sitemap.xml',
   };
 }

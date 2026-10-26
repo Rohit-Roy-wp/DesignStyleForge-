@@ -17,8 +17,8 @@ export function Footer() {
               <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 text-white shadow-md">
                 <Sparkles className="h-4 w-4" />
               </div>
-              <span className="text-lg font-black tracking-tight forge-text">
-                DesignStyle<span className="text-cyan-400">Forge</span>
+              <span className="text-xl font-black tracking-tight forge-text">
+                UX<span className="text-cyan-400">Forge</span>
               </span>
             </Link>
             <p className="text-xs forge-text-muted leading-relaxed max-w-sm">
@@ -87,7 +87,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/about/" className="hover:text-cyan-400 transition-colors">
-                  About DesignStyleForge
+                  About UXForge
                 </Link>
               </li>
               <li>
@@ -102,7 +102,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs forge-text-muted">
           <p>
-            © {new Date().getFullYear()} DesignStyleForge. All rights reserved. Built with Next.js 15+ SSG.
+            © {new Date().getFullYear()} UXForge. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">

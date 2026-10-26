@@ -5,7 +5,7 @@ import { ShieldCheck, ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy and Cookie practices for DesignStyleForge web utility platform.',
+  description: 'Privacy Policy and Cookie practices for UXForge web utility platform.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -30,9 +30,9 @@ export default function PrivacyPolicyPage() {
 
         <div className="space-y-6 text-sm leading-relaxed">
           <section>
-            <h2 className="text-lg font-bold text-white mb-2">1. Overview & ₹0 Server Data Collection</h2>
+            <h2 className="text-lg font-bold text-white mb-2">1. Overview & Client-Side Privacy</h2>
             <p>
-              At <strong>DesignStyleForge</strong> (accessible via designstyleforge.com), accessible to global web developers and creators, our core philosophy is <strong>100% client-side execution</strong>. All CSS generation, canvas manipulations (pixel art, retro scanlines, halftone filters), and typography previews run locally within your web browser. We do not store, process, or transmit your uploaded images, source code, or audio files to any server.
+              At <strong>UXForge</strong> (accessible via uxforge.vercel.app), accessible to global web developers and creators, our core philosophy is <strong>100% client-side execution</strong>. All CSS generation, canvas manipulations (pixel art, retro scanlines, halftone filters), and typography previews run locally within your web browser. We do not store, process, or transmit your uploaded images, source code, or audio files to any server.
             </p>
           </section>
 
@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-lg font-bold text-white mb-2">3. Google AdSense & Third-Party Cookies</h2>
             <p>
-              DesignStyleForge displays advertisements served by <strong>Google AdSense</strong> and affiliated ad networks to support ₹0 free access for all creators.
+              UXForge displays advertisements served by <strong>Google AdSense</strong> and affiliated ad networks to support 100% free access for all creators.
             </p>
             <ul className="list-disc pl-5 mt-2 space-y-1 text-neutral-400">
               <li>Third-party vendors, including Google, use cookies to serve ads based on a user&apos;s prior visits to our website or other websites.</li>

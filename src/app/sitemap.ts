@@ -4,7 +4,7 @@ import { TOOLS_DATA } from '@/data/toolsData';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://designstyleforge.com';
+  const baseUrl = 'https://uxforge.vercel.app';
 
   const toolUrls: MetadataRoute.Sitemap = TOOLS_DATA.map((tool) => ({
     url: `${baseUrl}${tool.route}`,

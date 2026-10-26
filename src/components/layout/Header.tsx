@@ -33,8 +33,8 @@ export function Header() {
               <Sparkles className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div className="truncate">
-              <span className="text-base sm:text-lg font-black tracking-tight flex items-center gap-1 font-sans truncate">
-                <span className="forge-text">DesignStyle</span>
+              <span className="text-lg sm:text-xl font-black tracking-tight flex items-center gap-0.5 font-sans truncate">
+                <span className="forge-text">UX</span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500 font-extrabold">
                   Forge
                 </span>

@@ -20,10 +20,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://designstyleforge.com'),
+  metadataBase: new URL('https://uxforge.vercel.app'),
   title: {
-    default: 'DesignStyleForge — 20+ Frontend Style Generators & Canvas Tools',
-    template: '%s | DesignStyleForge',
+    default: 'UXForge — 20+ Frontend Style Generators & Canvas Tools',
+    template: '%s | UXForge',
   },
   description:
     'The ultimate frontend utility platform for web developers and UI designers. Generate CSS for Glassmorphism, Cyberpunk Glitch, Aurora Gradients, Pixel Art, CRT Scanlines, and more.',
@@ -36,22 +36,22 @@ export const metadata: Metadata = {
     'Pixel art canvas',
     'Web developer utilities',
     'Tailwind CSS snippets',
-    'DesignStyleForge',
+    'UXForge',
   ],
-  authors: [{ name: 'DesignStyleForge Team' }],
-  creator: 'DesignStyleForge',
+  authors: [{ name: 'UXForge Team' }],
+  creator: 'UXForge',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://designstyleforge.com',
-    title: 'DesignStyleForge — 20+ Frontend Style Generators & Canvas Tools',
+    url: 'https://uxforge.vercel.app',
+    title: 'UXForge — 20+ Frontend Style Generators & Canvas Tools',
     description:
       'Free client-side generators for Glassmorphism, Cyberpunk, Claymorphism, Aurora Gradients, Pixel Art, Retro CRT, and more. 1-click CSS & Tailwind copy.',
-    siteName: 'DesignStyleForge',
+    siteName: 'UXForge',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DesignStyleForge — Frontend Design Generators',
+    title: 'UXForge — Frontend Design Generators',
     description: 'Instant CSS, Tailwind & HTML generators for 20+ popular design aesthetics.',
   },
   robots: {
