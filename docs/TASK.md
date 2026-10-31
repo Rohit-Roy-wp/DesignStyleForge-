@@ -20,17 +20,15 @@
 - [x] **Glass Specimen Fix:** Added contrasting substrate geometries and grid for real-time visible blur.
 - [x] **Widescreen Real Estate Density:** Expanded all containers to `max-w-[1600px]` with 4-column catalog grid.
 - [x] **Complete Project Documentation:** Created `ARCHITECTURE.md`, `DESIGN.md`, `MEMORY.md`, `PRD.md`, `RULES.md`, and `TASK.md` inside `docs/`.
+- [x] **Local Visual Review & Code Push:** Verified by user and successfully pushed to GitHub `origin main`. Live production auto-deployed on Vercel.
+- [x] **Adsterra Monetization Integration:** Added active 728×90 banner ad unit (`916e9f25d6aa919ecb3bd1d2b2af619f`) inside isolated iframe in `AdBanner.tsx`. Zero-conflict with React DOM, responsive across desktop & mobile.
 
 ---
 
-## 2. In Progress (User Review Phase)
+## 2. In Progress & Active Monitoring
 
-- [ ] **Local Visual Review:** User inspecting updated UI on `http://localhost:3000`.
-- [ ] **Manual Git Commit & Push:** User will execute `git add .`, `git commit`, and `git push origin main` manually when satisfied.
-
----
-
-## 3. Upcoming Backlog & Marketing Strategy
+- [ ] **Production Health Check:** Monitor live Vercel deployment on `https://uxforge.vercel.app/`.
+- [ ] **Google Indexing Monitoring:** Check Search Console "Pages" tab after 24-48 hours to confirm crawled URLs.
 
 - [ ] **Google Indexing Monitoring:** Check Search Console "Pages" tab after 24-48 hours to confirm crawled URLs.
 - [ ] **Reddit Showcase Reposting:** After 1-2 days of account age, post to `r/SideProject` and `r/webdev` (Showoff Saturday).
