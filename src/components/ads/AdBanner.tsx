@@ -98,32 +98,25 @@ export function AdBanner({ format, className = '', slotId }: AdBannerProps) {
 
   return (
     <aside
-      aria-label="Sponsored Advertisement"
-      className={`relative overflow-hidden rounded-xl border border-[var(--app-card-border)] bg-[var(--app-card)] transition-colors hover:border-cyan-500/30 shadow-xs flex flex-col items-center justify-center p-2 ${getFormatClasses()} ${className}`}
+      aria-label="Advertisement"
+      className={`relative overflow-hidden rounded-xl border border-[var(--app-card-border)] bg-[var(--app-card)] shadow-xs flex items-center justify-center p-2.5 ${getFormatClasses()} ${className}`}
     >
-      <div className="w-full flex items-center justify-between px-2 pb-1.5 text-[9px] font-mono text-[var(--app-text-muted)] opacity-60 uppercase tracking-widest border-b border-[var(--app-card-border)] mb-2">
-        <span>Sponsored Banner</span>
-        <span>Adsterra • 728×90</span>
-      </div>
-
-      <div className="w-full flex items-center justify-center overflow-hidden py-1">
-        <div className="flex items-center justify-center overflow-x-auto no-scrollbar max-w-full">
-          {mounted ? (
-            <iframe
-              srcDoc={adsterraHtml}
-              width="728"
-              height="90"
-              className="border-0 overflow-hidden shrink-0 rounded"
-              scrolling="no"
-              title="Sponsored Advertisement"
-              loading="lazy"
-            />
-          ) : (
-            <div className="w-[728px] h-[90px] shrink-0 bg-slate-900/40 rounded flex items-center justify-center text-xs font-mono text-slate-500">
-              Loading Advertisement...
-            </div>
-          )}
-        </div>
+      <div className="flex items-center justify-center overflow-x-auto no-scrollbar max-w-full">
+        {mounted ? (
+          <iframe
+            srcDoc={adsterraHtml}
+            width="728"
+            height="90"
+            className="border-0 overflow-hidden shrink-0 rounded-lg"
+            scrolling="no"
+            title="Advertisement"
+            loading="lazy"
+          />
+        ) : (
+          <div className="w-[728px] h-[90px] shrink-0 bg-slate-900/30 rounded-lg flex items-center justify-center text-xs font-mono text-slate-500">
+            Loading...
+          </div>
+        )}
       </div>
     </aside>
   );
